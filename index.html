@@ -1,4 +1,54 @@
-@media (max-width: 10in) {
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Product Landing Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Shizuru&display=swap" rel="stylesheet">
+		<style>
+		
+			body {
+				font-family: Courier;
+				background: LightGray;
+			}
+			
+			h1 {
+				text-align: center;
+				position: relative;
+				top: 15vh;
+			}
+
+			a {
+				text-decoration: none;
+				color: black;
+			}
+			
+			a:hover {
+				color: gray;
+				font-size: 2em;
+			}
+			
+			#header {
+				height: 20vh;
+			}
+			
+			#header-img {
+				width: 10vw;
+				height: 10vh;
+			}
+			
+			#video-div {
+				width: 20vw;
+				margin: auto;
+				position: relative;
+				top: 2vh;
+			}
+			
+			#video {
+				width: 100%;
+				margin: auto;
+				
+			}
+			@media (max-width: 799px) {
 				#header {
 					display: flex;
 					flex-direction: row;
@@ -223,3 +273,354 @@
 					grid-row: 2 / 3;
 				}
 			}
+				
+			
+			@media (min-width: 800px) {
+				#header {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					z-index: 2;
+					background: LightGray;
+					height: 15vh;
+					width: 100vw;
+					position: fixed;
+					top: 0px;
+				}
+				
+				#image-div {
+					display: flex;
+					flex-direction: row;
+					height: 9vh;
+					position: fixed;
+					z-index: 1;
+				}
+				
+				#header-text {
+					display: inline;
+					align-self: end;
+					margin-left: 2vw;
+				}
+				
+				#header-img {
+					
+				}
+				
+				#nav-bar {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+					width: 50vw;
+					align-items: start;
+					position: fixed;
+					top: 0%;
+					left: 50vw;
+					height: 10vh;
+					padding-top: 5vh;
+					font-family: Satisfy, Times New Roman;
+					background: LightGray;
+					z-index: 2;
+				}
+				
+				#form {
+					display: grid;
+					grid-template-rows: repeat(10, 1fr);
+					width: 50vw;
+					margin: auto;
+					position: relative;
+					top: 20vh;
+				}
+				
+				#email {
+					grid-row: 1 / 2;
+					max-width: 45vw;
+					margin: auto;
+				}
+				
+				#info {
+					display: grid;
+					row-gap: 5vw;
+					column-gap: 5vw;
+					width: 80vw;
+					margin: auto;
+					position: relative;
+					top: 10vh;
+				}
+				
+				
+				#row1 {
+					grid-column: 1 / 2;
+					grid-row: 1 / 2;
+				}
+				
+				#row1-image {
+					opacity: .8;
+					
+				}
+				
+				#row1contents {
+					
+				}
+				
+				#row1header {
+					
+				}
+				
+				#row1paragraph {
+					width: 25vw;
+					text-align: justify;
+				}
+				
+				#row2 {
+					grid-column: 2 / 3;
+					grid-row: 1 / 2;
+				}
+				
+				#row3 {
+					grid-column: 3 / 4;
+					grid-row: 1 / 2;
+				}
+				
+				#video-div {
+					width: 50vw;
+					max-width: 50vw;
+					min-width: 50vw;
+				}
+				
+				#prices {
+					margin-top: 12vh;
+					min-width: 20vw;
+					max-width: 20vw;
+					width: 20vw;
+					display: grid;
+					column-gap: 5vw;
+					margin: 15vw;
+				}
+				
+				#price1 {
+					border: 1px solid #000;
+					border-radius: 5%;
+					width: 20vw;
+					min-width: 20vw;
+					max-width: 20vw;
+					grid-column: 1 / 2;
+				}
+				
+				#price1-header1 {
+					text-align: center;
+					background: DarkGray;
+				}
+				
+				#price1-header2 {
+					text-align: center;
+				}
+				
+				#price1-description {
+					width: 18vw;
+					text-align: center;
+					margin: auto;
+				}
+				
+				#price1-btn {
+					background:hsl(51,100%,50%);
+					width: 10vw;
+					min-width: 10vw;
+					max-width: 10vw;
+					margin: 5vw;
+				}
+				
+				#price1-btn:hover {
+					background:hsl(51,100%,45%)
+				}
+				
+				#price2 {
+					border: 1px solid #000;
+					border-radius: 5%;
+					width: 20vw;
+					min-width: 20vw;
+					max-width: 20vw;
+					grid-column: 2 / 3;
+				}
+				
+				#price2-header1 {
+					text-align: center;
+					background: DarkGray;
+				}
+				
+				#price2-header2 {
+					text-align: center;
+				}
+				
+				#price2-description {
+					width: 18vw;
+					text-align: center;
+					margin: auto;
+				}
+				
+				#price2-btn {
+					background:hsl(51,100%,50%);
+					width: 10vw;
+					min-width: 10vw;
+					max-width: 10vw;
+					margin: 5vw;
+				}
+				
+				#price2-btn:hover {
+					background:hsl(51,100%,45%)
+				}
+				
+				#price3 {
+					border: 1px solid #000;
+					border-radius: 5%;
+					width: 20vw;
+					min-width: 20vw;
+					max-width: 20vw;
+					grid-column: 3 / 4;
+				}
+				
+				#price3-header1 {
+					text-align: center;
+					background: DarkGray;
+				}
+				
+				#price3-header2 {
+					text-align: center;
+				}
+				
+				#price3-description {
+					width: 18vw;
+					text-align: center;
+					margin: auto;
+				}
+				
+				#price3-btn {
+					background:hsl(51,100%,50%);
+					width: 10vw;
+					margin: 5vw;
+				}
+				
+				#price3-btn:hover {
+					background:hsl(51,100%,45%)
+				}
+				#bottom_section {
+					background: DarkGray;
+					margin: 0px;
+					position: relative;
+					right: 1vw;
+					display: grid;
+					text-align: right;
+				}
+				
+				#bottom_links {
+					grid-row: 1 / 2;
+				}
+				
+				#bottom_links a:hover {
+					font-weight: bold;
+					color: rgb(255, 255, 255);
+					font-size: 1em;
+				}
+				
+				#bottom_copyright {
+					grid-row: 2 / 3;
+				}
+			}
+			#submit {
+				background: Gold;
+				font-weight: bold;
+				max-width: 15vw;
+				min-width: 15vh;
+				margin: auto;
+			}
+			
+			
+			<!-- Certain properties for certain elements , such as the nav-bar 
+				will change depending on the size of the device, which we can control
+				and influence using media queries
+			-->
+			
+			<!-- So basically, the size/width of the nav-bar and the way elements are
+				displayed shall change depending on the size of the device
+			-->
+			
+			
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<div id="image-div">
+				<img src="https://tse4.mm.bing.net/th?id=OIP.GirJQr4EqxWQLpjVl8WncAHaDb&pid=Api&P=0&w=324&h=149" id="header-img" alt="Company Logo" />
+				<p id="header-text">Art's Music Shop</p>
+			</div>
+			<nav id="nav-bar">
+				<a href="#video-div" class="nav-link">How It Works</a>
+				<a href="#info" class="nav-link" >Features</a>
+				<a href="#" class="nav-link">Pricing</a>
+			</nav>
+		</header>
+		<h1>Private Lessons for String Instruments</h1>
+		<form id="form" action="https://www.freecodecamp.com/email-submit">
+			<input type="email" id="email" placeholder="Please enter your email"/>
+			<button type="submit" id="submit">Get Started</button>
+		</form>
+		<div id="video-div">
+			<video id="video" controls>
+				<source src="johann-pachelbel-canon-in-d-major.mp4" type="video/mp4" />
+			</video>
+		</div>
+		<div id="info">
+			<div id="row1">
+				<img src="data:image/png;base64,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" id="row1-image" />
+				<h2 id="row1header">Quality Lessons and Instruments</h2>
+				<br>
+				<p id="row1paragraph">We offer quality string instruments and have the highest trained instructors who have numerous years of experience as professional musicians.</p></p>
+			</div>
+			
+			<div id="row2">
+				<img src="data:image/jpeg;base64,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" id="row2-image" />
+				
+					<h2 id="row2header">In-shop pickup</h2>
+					<br>
+					<p id="row2paragraph">You can order and view instruments instore and even test them to see if you like it before purchasing.</p>
+			</div>
+			
+			<div id="row3">
+				<img src="https://tse3.mm.bing.net/th?id=OIP.MpKIyBjJijgHYN1ydBWDNQHaHZ&pid=Api&P=0&w=167&h=167" id="row3-image" />
+				<p id="row3contents">
+					<h2 id="row3header">Free Tuning and Low Repair</h2>
+					<p id="row3paragraph">For any damaged product, we offer low-cost repairs at competitive prices. We also tune instruments for free in-shop.</p>
+				</p>
+			</div>
+		</div>
+		
+		<div id="prices">
+			<div id="price1">
+				<h2 id="price1-header1">String Lessons</h2>
+				<h2 id="price1-header2">$16/hr</h2>
+				<p id="price1-description">Take instrument lessons for $16 an hour to learn from professional musicians.</p>
+				<button id="price1-btn">SELECT</button>
+			</div>
+			<div id="price2">
+				<h2 id="price2-header1">String Instruments</h2>
+				<h2 id="price2-header2">$500 - $2000</h2>
+				<p id="price2-description">Buy String Instruments, starting from $500 and going up to $2000.</p>
+				<button id="price2-btn">SELECT</button>
+			</div>
+			<div id="price3">
+				<h2 id="price3-header1">Repairs</h2>
+				<h2 id="price3-header2">$50 - $100</h2>
+				<p id="price3-description">Get an instrument repaired, starting from $50 and going up to $100.</p>
+				<button id="price3-btn">SELECT</button>
+			</div>
+		</div>
+		
+		<div id="bottom_section">
+			<div id="bottom_links">
+				<a href="#" target="_blank" id="privacy_link">Privacy</a>
+				<a href="#" target="_blank" id="terms_link">Terms</a>
+				<a href="#" target="_blank" id="contact_link">Contact</a>
+			</div>
+			<p id="bottom_copyright">Copyright 2022, Art's Music Shop</p>
+		</div>
+	</body>
+</html>
